@@ -1,0 +1,211 @@
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+::root {    
+    --hexadecimal: grey;
+    --span-color: #e81ac6;
+    --backgroundcolor: rgb(red, green, blue);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--backgroundcolor);
+}
+
+
+h1 {
+    font-family: 'Georgia', serif;
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+    display:inline-block;
+}
+
+h2 {
+    color: var(--hexadecimal);
+    font-size: 24px;
+    border-bottom: 2px solid #333;
+    margin-bottom: 10px;
+
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    display:inline;
+}
+
+span {
+    color: var(--span-color);
+
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.links a {
+    color: #1236d6;
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+img {
+    width: 300px;
+    height: auto;
+    border: 2px solid #333;
+    display: block;
+    margin: 20px auto;
+}
+
+.img1 {
+    width: 300px;
+    border-radius: 50%;
+}
+
+#type-table {   
+    background-color: rgb(179, 179, 179);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th,
+td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #555;
+    color: #fff;
+}
+
+
+.box {
+    width: 300px;
+    padding: 30px;
+    margin: 20px auto;
+    border: 2px solid #333;
+    background-color: #fff;
+}
+
+.box:hover {
+    background-color: #e0e0e0;
+}
+
+
+
+.box {
+    text-align: center;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .img1 {
+        width: 100%;
+    }
+
+    .box {
+        width: 90%;
+        padding: 20px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+
+
+    @media (max-width: 480px) {
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .img1 {
+            width: 100%;
+            padding: 15px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        th,
+        td {
+            padding: 5px;
+            font-size: 15px;
+        }
+
+
+
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        h3 {
+            font-size: 18px
+        }
+    }
+}
