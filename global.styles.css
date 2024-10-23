@@ -25,6 +25,7 @@ h1 {
     text-align: center;
     text-decoration: underline;
     display:inline-block;
+    font-weight: 100;
 }
 
 h2 {
